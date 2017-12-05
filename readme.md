@@ -1,4 +1,4 @@
-# Matter In Motion. Cli extension for easy loading resource initial data for Matter In Motion
+# Matter In Motion. Cli extension for easy loading resource initial data.
 
 [![NPM Version](https://img.shields.io/npm/v/mm-resource-data.svg?style=flat-square)](https://www.npmjs.com/package/mm-resource-data)
 [![NPM Downloads](https://img.shields.io/npm/dt/mm-resource-data.svg?style=flat-square)](https://www.npmjs.com/package/mm-resource-data)
