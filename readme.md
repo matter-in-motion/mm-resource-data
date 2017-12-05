@@ -14,7 +14,7 @@
 
 ## Data JSON format
 
-```json
+```
 {
   "resource": [
     { ... },
