@@ -1,4 +1,4 @@
-# Matter In Motion. Cli extension for easy loading resource initial data.
+# Matter In Motion. CLI extension for loading resource initial data.
 
 [![NPM Version](https://img.shields.io/npm/v/mm-resource-data.svg?style=flat-square)](https://www.npmjs.com/package/mm-resource-data)
 [![NPM Downloads](https://img.shields.io/npm/dt/mm-resource-data.svg?style=flat-square)](https://www.npmjs.com/package/mm-resource-data)
@@ -10,7 +10,7 @@
 ## Cli
 
 * resource
-  - load — [file or directory]. Load resource data from the file or from all JSON files in the directory. The default is `data` directory. All files that start with `_` will be skipped. All data will be created using `resource.controller` create method.
+  - load — [file or directory]. Load resource data from the JSON file or all JSON files in the directory. The default is `data` directory. All files that start with `_` are skipped. This extension uses a `resource.controller` create method to import data.
 
 ## Data JSON format
 
