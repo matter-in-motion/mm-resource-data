@@ -9,7 +9,7 @@ const logGroup = (cli, group, cb) => {
   cb();
 };
 
-const insertData = (ctrl, data) => ctrl.create(data).then(res => res.id || res);
+const insertData = (ctrl, data, index) => ctrl.create(data, index).then(res => res.id || res);
 
 const parseJson = function(q, units, filename, cb) {
   const cli = units.require('core.cli');
@@ -25,7 +25,7 @@ const parseJson = function(q, units, filename, cb) {
         const ctrl = units.get('resources.' + resource + '.controller');
 
         if (!ctrl) {
-          throw new Error(`Error parsing file ${filename}: tno resource ${resource} found`);
+          throw new Error(`Error parsing file ${filename}: no resource ${resource} found`);
         }
 
         const content = json[resource];
@@ -34,9 +34,9 @@ const parseJson = function(q, units, filename, cb) {
           args: [ cli, `${resource} << ${content.length} documents from ${filename}` ]
         });
 
-        content.forEach(data => q.push({
+        content.forEach((data, i) => q.push({
           method: insertData,
-          args: [ ctrl, data ]
+          args: [ ctrl, data, i ]
         }));
       }
       cb();
