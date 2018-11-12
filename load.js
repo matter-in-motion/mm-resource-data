@@ -22,13 +22,13 @@ const parseJson = function(q, units, filename, cb) {
       const json = JSON.parse(fileContent);
 
       for (let resource in json) {
-        const ctrl = units.get('resources.' + resource + '.controller');
+        const ctrl = units.get(`resources.${resource}.controller`);
 
         if (!ctrl) {
           throw new Error(`Error parsing file ${filename}: no resource ${resource} found`);
         }
 
-        const content = json[resource];
+        const content = json[resource].reverse();
         q.push({
           method: logGroup,
           args: [ cli, `${resource} << ${content.length} documents from ${filename}` ]

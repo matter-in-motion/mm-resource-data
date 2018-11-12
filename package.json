@@ -26,8 +26,8 @@
     "url": "https://github.com/matter-in-motion/mm-resource-data/issues"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "queueue": "^1.0.0"
+    "bluebird": "^3.5.3",
+    "queueue": "^1.2.6"
   },
   "homepage": "https://github.com/matter-in-motion/mm-resource-data#readme"
 }

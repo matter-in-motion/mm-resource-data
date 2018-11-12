@@ -10,7 +10,7 @@
 ## Cli
 
 * resource
-  - load — [file or directory]. Load resource data from the JSON file or all JSON files in the directory. The default is `data` directory. All files that start with `_` are skipped. This extension uses a `resource.controller` create method to import data.
+  - load — [file or directory]. Load resource data from the JSON file or all JSON files in the directory. The default is `data` directory. All files that start with `_` are skipped. __This extension uses a `resource.controller` create method to import data.__
 
 ## Data JSON format
 
